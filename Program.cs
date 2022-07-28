@@ -47,6 +47,16 @@ class Program
             Console.WriteLine(item);
         }
 
+        System.Console.WriteLine("Girilen sayıların en küçük üçünün ortalaması: ");
+        System.Console.WriteLine((ana_koleksiyon.Sum() / ana_koleksiyon.Count()));
+        int kucuk_ort = (ana_koleksiyon.Sum() / ana_koleksiyon.Count());
+
+        System.Console.WriteLine("Girilen sayıların en büyük üçünün ortalaması: ");
+        System.Console.WriteLine((koleksiyon.Sum() / koleksiyon.Count()));
+        int buyuk_ort = (koleksiyon.Sum() / koleksiyon.Count());
+
+        System.Console.WriteLine("Ortlamaların toplamı: " + (kucuk_ort + buyuk_ort));
+
     }
 }
 
